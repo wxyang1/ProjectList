@@ -1,0 +1,17 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydatabase?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: asd123
+
+mybatis:
+  # 实体类别名包路径 (将类名改成小写然后被resources\mappers\StudentInfoMapper.xml调用)
+  type-aliases-package: com.hr.demo1.entity
+  # 映射文件路径
+  mapper-locations: classpath:mappers/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

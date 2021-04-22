@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hr.demo1.mapper.StudentInfoMapper">
+    <resultMap id="resultMap" type="com.hr.demo1.entity.StudentInfo">
+            <result column="last_name" property="lastName"></result>
+    </resultMap>
+
+    <select id="findAll" resultMap="resultMap">
+      select * from student_info
+    </select>
+</mapper>

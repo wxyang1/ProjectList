@@ -1,0 +1,9 @@
+abc:
+  def: 123
+#server:
+#  port: 8088
+spring:
+  profiles:
+    active: dev
+
+
